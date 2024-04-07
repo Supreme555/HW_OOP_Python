@@ -4,17 +4,17 @@ class Queue:
 
     def push(self, n):
         self.queue.append(n)
-        print("Ок.")
+        print("ok")
 
     def pop(self):
         if self.is_empty():
-            print("Ошибка.")
+            print("error")
         else:
             print(self.queue.pop(0))
 
     def front(self):
         if self.is_empty():
-            print("Ошибка.")
+            print("error")
         else:
             print(self.queue[0])
 
@@ -23,7 +23,7 @@ class Queue:
 
     def clear(self):
         self.queue.clear()
-        print("Ок.")
+        print("ok")
 
     def is_empty(self):
         return len(self.queue) == 0
@@ -44,5 +44,5 @@ while True:
     elif operation == "clear":
         queue.clear()
     elif operation == "exit":
-        print("Пока.")
+        print("bye")
         break

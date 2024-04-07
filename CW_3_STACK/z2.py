@@ -9,10 +9,6 @@ def binary_search_closest(arr, x):
             left = mid + 1
         else:
             right = mid - 1
-
-    # Теперь left указывает на элемент, который больше x,
-    # а right указывает на элемент, который меньше x.
-    # Найдем ближайший элемент к x.
     if right < 0:
         return arr[left]
     if left >= len(arr):
@@ -23,11 +19,9 @@ def binary_search_closest(arr, x):
     else:
         return arr[left]
 
-# Чтение входных данных
 N, K = map(int, input().split())
 first_array = list(map(int, input().split()))
 second_array = list(map(int, input().split()))
 
-# Для каждого числа из второго массива находим ближайшее число в первом массиве
 for num in second_array:
     print(binary_search_closest(first_array, num))

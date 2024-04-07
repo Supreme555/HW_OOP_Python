@@ -4,7 +4,7 @@ class Stack:
 
     def push(self, n):
         self.stack.append(n)
-        print("Окей.")
+        print("ok")
 
     def pop(self):
         print(self.stack.pop())
@@ -17,7 +17,7 @@ class Stack:
 
     def clear(self):
         self.stack.clear()
-        print("Окей.")
+        print("ok")
 
 stack = Stack()
 
@@ -35,5 +35,5 @@ while True:
     elif operation == "clear":
         stack.clear()
     elif operation == "exit":
-        print("Пока.")
+        print("bye")
         break
