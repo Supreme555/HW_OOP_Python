@@ -13,10 +13,11 @@ class Stack:
             print(self.stack.pop())
 
     def back(self):
-        if self.is_empty():
-            print("error")
-        else:
+        if self.stack:
             print(self.stack[-1])
+        else:
+            print('error')
+
 
     def size(self):
         print(len(self.stack))

@@ -4,6 +4,8 @@ x = int(input())
 closest_element = array[0]
 min_distance = abs(x - array[0])
 
+# abs обсолютное значение
+
 for num in array:
     distance = abs(x - num)
     if distance < min_distance:

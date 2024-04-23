@@ -6,6 +6,7 @@ def is_balanced(s):
         if char in brackets:
             stack.append(char)
         elif char in brackets.values():
+            # возвращает словари
             if not stack or brackets[stack.pop()] != char:
                 return "no"
     
